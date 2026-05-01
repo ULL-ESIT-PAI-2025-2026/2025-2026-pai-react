@@ -1,0 +1,25 @@
+.canvas-card {
+  max-width: 760px;
+  margin: 72px auto 0;
+  padding: 40px;
+  border: 2px solid rgba(92, 6, 140, 0.18);
+  border-radius: 28px;
+  background: #ffffff;
+  box-shadow: 0 20px 50px rgba(92, 6, 140, 0.12);
+  text-align: center;
+}
+
+.canvas-title {
+  margin: 0 0 28px;
+  color: #5c068c;
+  font-size: 52px;
+  font-weight: 900;
+}
+
+.canvas-element {
+  display: block;
+  margin: 0 auto;
+  border: 3px solid #5c068c;
+  border-radius: 18px;
+  background: #ffffff;
+}
