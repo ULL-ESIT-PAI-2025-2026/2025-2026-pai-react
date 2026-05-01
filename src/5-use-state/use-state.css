@@ -1,0 +1,30 @@
+.use-state-card {
+  max-width: 720px;
+  margin: 80px auto 0;
+  padding: 18px;
+  border: 2px solid rgba(92, 6, 140, 0.18);
+  border-radius: 28px;
+  background: #ffffff;
+  box-shadow: 0 20px 50px rgba(92, 6, 140, 0.12);
+  text-align: center;
+}
+
+.use-state-title {
+  margin: 0 0 32px;
+  color: #5c068c;
+  font-size: 56px;
+  font-weight: 900;
+}
+
+.counter-display {
+  margin: 0 auto 32px;
+  color: #2f3028;
+  font-size: 72px;
+  font-weight: 900;
+}
+
+.counter-actions {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+}
