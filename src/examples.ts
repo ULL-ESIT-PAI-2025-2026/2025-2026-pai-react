@@ -1,7 +1,8 @@
 import type { ReactElement } from 'react';
 import { UseState } from './5-use-state/use-state';
+import { CanvasWithReact } from './8-canvas-with-react/canvas-with-react';
 
-export type ExampleName = 'home' | 'useState';
+export type ExampleName = 'home' | 'useState' | 'canvasWithReact';
 
 export interface Example {
   id: Exclude<ExampleName, 'home'>;
@@ -16,5 +17,11 @@ export const examples: Example[] = [
     title: 'State with useState',
     description: 'Counter example using typed state and event handlers.',
     component: UseState,
+  },
+  {
+    id: 'canvasWithReact',
+    title: 'Canvas in React',
+    description: 'Simple canvas example using useRef and useEffect.',
+    component: CanvasWithReact,
   },
 ];
