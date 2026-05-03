@@ -25,9 +25,15 @@ button:hover {
   background: #4a0571;
 }
 
+.back-button {
+  margin: 0 auto 16px;
+  padding: 10px 20px;
+}
+
 .page {
   min-height: 100vh;
-  padding: 56px 48px;
+  padding: 24px 48px;
+  box-sizing: border-box;
   background:
     radial-gradient(circle at top left, rgba(92, 6, 140, 0.16), transparent 32%),
     linear-gradient(135deg, #eff0eb 0%, #ffffff 100%);
@@ -96,8 +102,4 @@ button:hover {
   color: #757763;
   font-size: 18px;
   line-height: 1.45;
-}
-
-.back-button {
-  margin-bottom: 32px;
 }
