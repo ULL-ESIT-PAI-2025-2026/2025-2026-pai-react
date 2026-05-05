@@ -6,13 +6,15 @@ import type { Point2D, ProjectileViewData } from './projectile-types';
 import './projectile.css';
 
 export class ProjectileView {
-  private readonly root: Root;
+  private root: Root | null = null;
 
-  constructor(rootElement: HTMLElement) {
+  setRootElement(rootElement: HTMLElement): void {
     this.root = createRoot(rootElement);
   }
 
   render(viewData: ProjectileViewData): void {
+    if (this.root === null) return;
+
     this.root.render(<ProjectileComponent viewData={viewData} />);
   }
 }

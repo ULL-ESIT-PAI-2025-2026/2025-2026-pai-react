@@ -3,9 +3,17 @@ import { ProjectileView } from './projectile-view.tsx';
 
 export class ProjectileController {
   constructor(
-    private readonly model: ProjectileModel,
-    private readonly view: ProjectileView,
-  ) {
+  private readonly model: ProjectileModel,
+  private readonly view: ProjectileView,
+) {
+    const element = document.getElementById('projectile-root');
+
+    if (element === null) {
+      throw new Error('Root element not found');
+    }
+
+    this.view.setRootElement(element);
+
     this.run();
   }
 
