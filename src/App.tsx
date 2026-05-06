@@ -33,7 +33,7 @@ function App(): ReactElement {
       <section className="hero">
         <h1>React PAI Examples</h1>
         <p>
-          A progressive collection of small examples, from basic components to
+          A progressive collection of examples from basic components to
           interactive PAI-style applications.
         </p>
       </section>
@@ -42,11 +42,12 @@ function App(): ReactElement {
         {examples.map((example) => (
           <article className="card" key={example.id}>
             <h2>{example.title}</h2>
-            <p>{example.description}</p>
 
-            <button onClick={(): void => setSelectedExample(example.id)}>
-              Open example
-            </button>
+            <div className="card-actions">
+              <button onClick={(): void => setSelectedExample(example.id)}>
+                Open
+              </button>
+            </div>
           </article>
         ))}
       </section>
