@@ -1,3 +1,14 @@
+/**
+ * Universidad de La Laguna
+ * Escuela Superior de Ingeniería y Tecnología
+ * Grado en Ingeniería Informática
+ * Asignatura: Programación de Aplicaciones Interactivas
+ * 
+ * @author Sara Darias Sánchez
+ * @since 01 May 2026
+ * @description Example of handling states in React.
+ */
+
 import { useState } from 'react';
 import type { ReactElement } from 'react';
 import './use-state.css';

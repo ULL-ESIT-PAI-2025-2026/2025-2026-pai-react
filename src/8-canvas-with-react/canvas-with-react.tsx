@@ -1,3 +1,14 @@
+/**
+ * Universidad de La Laguna
+ * Escuela Superior de Ingeniería y Tecnología
+ * Grado en Ingeniería Informática
+ * Asignatura: Programación de Aplicaciones Interactivas
+ * 
+ * @author Sara Darias Sánchez
+ * @since 01 May 2026
+ * @description Example of using canvas in React.
+ */
+
 import { useRef, useEffect } from 'react';
 import type { ReactElement } from 'react';
 import './canvas-with-react.css';
