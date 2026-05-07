@@ -12,6 +12,8 @@
  */
 
 import type { JSX } from 'react';
+import './hello-world.css';
+
 
 export function HelloWorld(): JSX.Element {
   return (
