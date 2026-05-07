@@ -1,10 +1,25 @@
+/**
+ * Universidad de La Laguna
+ * Escuela Superior de Ingeniería y Tecnología
+ * Grado en Ingeniería Informática
+ * Programación de Aplicaciones Interactivas 2025-2026
+ *
+ * @author Sara Darias Sánchez
+ * @author Sergio de la Barrera García
+ * @author Candela García Cruz
+ * @since May 5 2026
+ * @desc Defines the available React examples displayed in the application.
+ */
+
 import type { ReactElement } from 'react';
+import { HelloWorld } from './1-hello-world/hello-world';
 import { UseState } from './5-use-state/use-state';
 import { CanvasWithReact } from './8-canvas-with-react/canvas-with-react';
 import { ProjectileExample } from './11-final-demo/projectile-example';
 
 export type ExampleName = 
   'home' | 
+  'helloWorld' |
   'useState' | 
   'canvasWithReact'|
   'projectileMvcReact';
@@ -17,6 +32,12 @@ export interface Example {
 }
 
 export const examples: Example[] = [
+  {
+    id: 'helloWorld',
+    title: 'Hello World',
+    description: 'Basic React component example.',
+    component: HelloWorld,
+  },
   {
     id: 'useState',
     title: 'State with useState',
