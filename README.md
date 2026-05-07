@@ -1,20 +1,122 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/TgjXNNcD)
-[![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-2e0aaae1b6195c2367325f4f02e2d04e9abb55f0b24a779b69b11b9e10269abc.svg)](https://classroom.github.com/online_ide?assignment_repo_id=23779259&assignment_repo_type=AssignmentRepo)
-## PAI class Presentation Template 
-### To be used for works to be exposed in class sessions
+## PAI Class Presentation — React + MVC
+
+### Interactive examples and concepts adapted from PAI to React
+
+This project demonstrates how core concepts from the subject **Programación de Aplicaciones Interactivas (PAI)** can be adapted and implemented using **React**, maintaining the **MVC architecture** and introducing modern frontend practices such as Hooks and declarative rendering.
+
+---
+
+## 📁 Project Structure
 
 This directory is organised as follows:
 
-      .
-      ├── bib          # Presentation bibliography and references
-      ├── slides       # slides of your presentation (PDF is the preferred format)
-      ├── tests        # Source code for tests (if applicable)
-      ├── src          # Source code (add subdirectories if necessary) 
-      
-When you receive the link to this repository, clone it and use it to host all the material for the work to be done: slides, code, etc.
+```
 
-Upload the link to this public repository to the class assignment. This is required for the evaluation of the work.
+.
+├── bib          # Bibliography and references used in the project
+├── slides       # Slides of the presentation
+├── src          # Source code (examples and demos)
 
-Post the link to the repository in the PAI forum before the presentation date of the work, so that all students have access to the material in the exposition session.
+````
 
-Remove from the repository those directories that are not necessary for your work.
+### 🔹 Source code structure
+
+The `src` directory contains a set of progressive examples:
+
+- `1-hello-world` → Basic React component  
+- `2.1-book-props-example` → Props usage  
+- `4.1-events` → Event handling  
+- `5-use-state` → State management with Hooks  
+- `6.1-use-effect` → Lifecycle with useEffect  
+- `6.2-use-ref` → Direct DOM access (canvas)  
+- `7-mini-mvc` → MVC pattern adapted to React  
+- `8-canvas-with-react` → Canvas rendering in React  
+- `11-final-demo` → Final integration (MVC + React + Canvas)
+
+Additionally:
+
+- `App.tsx` → Main application component  
+- `examples.ts` → Example routing/selection logic  
+- `main.tsx` → React entry point  
+
+---
+
+## ⚛️ Concept Overview
+
+This project focuses on the following key ideas:
+
+- React components as the **View**
+- Hooks as a way to manage **Controller logic**
+- State as the **Model**
+- Declarative rendering instead of manual DOM manipulation
+- Integration of **Canvas** within React
+
+---
+
+## 🚀 Running the project
+
+### Install dependencies
+
+```bash
+npm install
+````
+
+---
+
+### Development mode
+
+```bash
+npm run dev
+```
+
+Runs the application locally with hot reload.
+
+---
+
+### Build for production
+
+```bash
+npm run build
+```
+
+Generates the optimized production files inside the `dist/` directory.
+
+---
+
+### Preview build
+
+```bash
+npm run preview
+```
+
+Runs a local server to preview the production build (same behaviour as deployment).
+
+---
+
+## 🌐 Deployment
+
+The project is deployed using **GitHub Pages** with **GitHub Actions**.
+
+On each push to `main`:
+
+* The project is built (`npm run build`)
+* The `dist/` folder is generated
+* The application is automatically deployed
+
+---
+
+## 🎯 Objective
+
+The main goal of this project is to show that:
+
+> MVC architecture can be preserved in React, while adopting a more modern and declarative way of rendering the UI.
+
+---
+
+## 📚 Bibliography
+
+See `/bib` directory for all references used.
+
+---
+
+> *This documentation was prepared for the PAI course at Universidad de La Laguna.*
