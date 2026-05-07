@@ -12,6 +12,7 @@
  */
 
 import type { JSX } from 'react';
+import './book.css';
 import {
   Book,
   BookDestructured,
