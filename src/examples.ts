@@ -95,13 +95,6 @@ export const examples: Example[] = [
     component: UseState,
   },
   {
-    id: 'useEffect',
-    title: 'Side Effects with useEffect',
-    description: 'Example of using useEffect to log component lifecycle events.',
-    component: UseEffect,
-  },
-  
-  {
     id: 'useRef',
     title: 'References with useRef',
     description: 'Example of using useRef to store previous state values.',
