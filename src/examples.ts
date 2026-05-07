@@ -101,12 +101,6 @@ export const examples: Example[] = [
     component: UseRef,
   },
   {
-    id: 'bookMVC',
-    title: 'Mini MVC Example',
-    description: 'A simple implementation of the Model-View-Controller pattern in React.',
-    component: BookMVC,
-  },
-  {
     id: 'canvasWithReact',
     title: 'Canvas in React',
     description: 'Simple canvas example using useRef and useEffect.',
