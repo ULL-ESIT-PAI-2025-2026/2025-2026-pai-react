@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import type { ReactElement } from 'react';
-import { examples } from './examples.ts';
-import type { ExampleName } from './examples.ts';
+import { examples } from './examples-2.ts';
+import type { ExampleName } from './examples-2.ts';
 import './App.css';
 
 function App(): ReactElement {
