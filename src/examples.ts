@@ -13,6 +13,7 @@
 
 import type { ReactElement } from 'react';
 import { HelloWorld } from './1-hello-world/hello-world';
+import { BookDemo } from './2.1-book-props-example/book-examples';
 import { UseState } from './5-use-state/use-state';
 import { CanvasWithReact } from './8-canvas-with-react/canvas-with-react';
 import { ProjectileExample } from './11-final-demo/projectile-example';
@@ -20,6 +21,7 @@ import { ProjectileExample } from './11-final-demo/projectile-example';
 export type ExampleName = 
   'home' | 
   'helloWorld' |
+  'bookProps' |
   'useState' | 
   'canvasWithReact'|
   'projectileMvcReact';
@@ -37,6 +39,12 @@ export const examples: Example[] = [
     title: 'Hello World',
     description: 'Basic React component example.',
     component: HelloWorld,
+  },
+  {
+    id: 'bookProps',
+    title: 'Book Props Examples',
+    description: 'Demonstrates different ways of using props in React.',
+    component: BookDemo,
   },
   {
     id: 'useState',
