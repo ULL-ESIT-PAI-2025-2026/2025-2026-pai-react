@@ -1,9 +1,9 @@
 import type { ReactElement } from 'react';
 import { UseState } from './5-use-state/use-state';
 import {Events }from './4.1-events/events';
-import { UseEffect } from './7.1-use-effect/use-effect';
-import { UseRef } from './7.2-use-ref/use-ref';
-import  BookMVC from './4.2-mini-mvc/adapter';
+import { UseEffect } from './6.1-use-effect/use-effect';
+import { UseRef } from './6.2-use-ref/use-ref';
+import  BookMVC from './7-mini-mvc/adapter';
 export type ExampleName = 'home' | 'useState' | 'Events' |  'useEffect'| 'useRef' | 'bookMVC';
 
 export interface Example {
