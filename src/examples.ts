@@ -84,7 +84,7 @@ export const examples: Example[] = [
     title: 'Mini MVC Example',
     description: 'A simple implementation of the Model-View-Controller pattern in React.',
     component: BookMVC,
-  }
+  },
   {
     id: 'canvasWithReact',
     title: 'Canvas in React',
