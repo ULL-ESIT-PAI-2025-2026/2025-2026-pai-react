@@ -2,18 +2,22 @@
  * Universidad de La Laguna
  * Escuela Superior de Ingeniería y Tecnología
  * Grado en Ingeniería Informática
- * Programación de Aplicaciones Interactivas
- *
- * @file ProjectileModel class.
- * @since May 07 2026
- * @description Model that calculates projectile motion and stores its parameters.
+ * Asignatura: Programación de Aplicaciones Interactivas
+ * 
+ * @author Sara Darias Sánchez
+ * @author Sergio de la Barrera García
+ * @author Candela García Cruz
+ * @since 01 May 2026
+ * @description Model component that stores the projectile parameters
+ *              and calculates its trajectory.
  */
+import type {
+  LaunchParameters,
+  Point2D,
+  ProjectileState,
+} from './projectile-types.js';
 
-import type {LaunchParameters, Point2D, ProjectileState} from './projectile-types';
-
-/**
- * @description Handles projectile physics and state.
- */
+/** @description Represents the projectile model and its physics logic. */
 export class ProjectileModel {
   private parameters: LaunchParameters = {
     initialSpeed: 25,
@@ -23,18 +27,18 @@ export class ProjectileModel {
   };
 
   /**
-   * @description Returns the current state of the projectile.
-   * @returns Projectile state including parameters and trajectory.
+   * @description Returns the current application state.
+   * @returns Projectile state with parameters and trajectory.
    */
   getState(): ProjectileState {
     return {
-      parameters: {...this.parameters},
+      parameters: { ...this.parameters },
       trajectory: this.calculateTrajectory(),
     };
   }
 
   /**
-   * @description Updates the initial speed.
+   * @description Updates the projectile initial speed.
    * @param initialSpeed New speed value.
    */
   setInitialSpeed(initialSpeed: number): void {
@@ -50,16 +54,14 @@ export class ProjectileModel {
   }
 
   /**
-   * @description Updates the initial height.
-   * @param initialHeight New height value.
+   * @description Updates the initial projectile height.
+   * @param initialHeight New initial height.
    */
   setInitialHeight(initialHeight: number): void {
     this.parameters.initialHeight = initialHeight;
   }
 
-  /**
-   * @description Resets parameters to default values.
-   */
+  /** @description Restores the default projectile parameters. */ 
   reset(): void {
     this.parameters = {
       initialSpeed: 25,

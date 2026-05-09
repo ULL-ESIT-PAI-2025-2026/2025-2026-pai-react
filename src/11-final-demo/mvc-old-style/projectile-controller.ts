@@ -2,22 +2,23 @@
  * Universidad de La Laguna
  * Escuela Superior de Ingeniería y Tecnología
  * Grado en Ingeniería Informática
- * Programación de Aplicaciones Interactivas
- *
- * @file ProjectileController class.
- * @since May 07 2026
- * @description Controller that coordinates the projectile model and view.
+ * Asignatura: Programación de Aplicaciones Interactivas
+ * 
+ * @author Sara Darias Sánchez
+ * @author Sergio de la Barrera García
+ * @author Candela García Cruz
+ * @since 01 May 2026
+ * @description Controller component that coordinates the projectile model
+ *              and view.
  */
 
 import {ProjectileModel} from './projectile-model.js';
 import {ProjectileView} from './projectile-view.js';
 
-/**
- * @description Handles interaction between model and view.
- */
+/** @description Handles user interaction and updates the view. */
 export class ProjectileController {
   /**
-   * @description Creates the controller, initializes the root element and starts the application.
+   * @description Creates the controller and starts the application.
    * @param model Projectile model.
    * @param view Projectile view.
    */
@@ -25,41 +26,27 @@ export class ProjectileController {
     private readonly model: ProjectileModel,
     private readonly view: ProjectileView,
   ) {
-    const element = document.getElementById('projectile-root');
-
-    if (element === null) {
-      throw new Error('Root element not found');
-    }
-
-    this.view.setRootElement(element);
     this.run();
   }
 
-  /**
-   * @description Starts the application.
-   */
+  /** @description Registers listeners and renders the initial state. */
   private run(): void {
+    this.view.addSpeedInputListener(this.handleSpeedChange);
+    this.view.addAngleInputListener(this.handleAngleChange);
+    this.view.addHeightInputListener(this.handleHeightChange);
+    this.view.addResetListener(this.handleReset);
+
     this.renderView();
   }
 
-  /**
-   * @description Renders the view with the current state and callbacks.
-   */
+  /** @description Renders the current model state in the view. */
   private renderView(): void {
-    this.view.render({
-      state: this.model.getState(),
-      callbacks: {
-        onSpeedChange: this.handleSpeedChange,
-        onAngleChange: this.handleAngleChange,
-        onHeightChange: this.handleHeightChange,
-        onReset: this.handleReset,
-      },
-    });
+    this.view.render(this.model.getState());
   }
 
   /**
    * @description Handles speed changes from the view.
-   * @param initialSpeed New initial speed.
+   * @param initialSpeed New projectile speed.
    */
   private handleSpeedChange = (initialSpeed: number): void => {
     this.model.setInitialSpeed(initialSpeed);
@@ -68,7 +55,7 @@ export class ProjectileController {
 
   /**
    * @description Handles angle changes from the view.
-   * @param launchAngleDegrees New angle in degrees.
+   * @param launchAngleDegrees New launch angle.
    */
   private handleAngleChange = (launchAngleDegrees: number): void => {
     this.model.setLaunchAngleDegrees(launchAngleDegrees);
@@ -84,9 +71,7 @@ export class ProjectileController {
     this.renderView();
   };
 
-  /**
-   * @description Resets the model state.
-   */
+  /** @description Resets the application state. */
   private handleReset = (): void => {
     this.model.reset();
     this.renderView();
