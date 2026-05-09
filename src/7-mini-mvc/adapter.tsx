@@ -7,7 +7,7 @@ import './Book.css'
 import './adapter.css'
 
 
-function BookMVC() {
+export function BookMVC() {
   const [, forceRender] = useState(0);
   const [controller] = useState(
     () => new BookController(new Book(), BookView, () => forceRender((value) => value + 1))

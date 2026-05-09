@@ -18,9 +18,9 @@ import { Events } from './4.1-events/events';
 import { UseState } from './5-use-state/use-state';
 import { UseEffect } from './6.1-use-effect/use-effect';
 import { UseRef } from './6.2-use-ref/use-ref';
-import  BookMVC from './7-mini-mvc/adapter';
+import { BookMVC } from './7-mini-mvc/adapter';
 import { CanvasWithReact } from './8-canvas-with-react/canvas-with-react';
-import { ProjectileExample } from './11-final-demo/projectile-example';
+import { ProjectileReact } from './9-final-demo/projectile-react';
 
 export type ExampleName = 
   'home' | 
@@ -35,7 +35,7 @@ export type ExampleName =
   'useRef' |
   'bookMVC' |
   'canvasWithReact'|
-  'projectileMvcReact';
+  'ProjectileReact';
 
 export interface Example {
   id: Exclude<ExampleName, 'home'>;
@@ -107,9 +107,9 @@ export const examples: Example[] = [
     component: CanvasWithReact,
   },
   {
-    id: 'projectileMvcReact',
-    title: 'Projectile MVC (PAI + React)',
-    description: 'Projectile simulation using MVC architecture with React and Canvas.',
-    component: ProjectileExample,
+    id: 'ProjectileReact',
+    title: 'Projectile React',
+    description: 'Projectile simulation with React and Canvas.',
+    component: ProjectileReact,
   },
 ];

@@ -4,7 +4,9 @@
  * Grado en Ingeniería Informática
  * Asignatura: Programación de Aplicaciones Interactivas
  * 
- * @author Sara Darias Sánchez
+ * @author Sara Darias Sánchez  
+ * @author Sergio de la Barrera García
+ * @author Candela García Cruz
  * @since 01 May 2026
  * @description Example of using canvas in React.
  */
@@ -23,7 +25,7 @@ export function CanvasWithReact(): ReactElement {
     if (context === null) return;
 
 
-    context.fillStyle = '#5C068C';
+    context.fillStyle = '#5C068C'; // ull pruple
     context.fillRect(50, 50, 150, 100);
   }, []);
 

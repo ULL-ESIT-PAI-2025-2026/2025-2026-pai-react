@@ -4,7 +4,9 @@
  * Grado en Ingeniería Informática
  * Programación de Aplicaciones Interactivas
  * 
- * @author Sara Darias Sánchez
+ * @author Sara Darias Sánchez  
+ * @author Sergio de la Barrera García
+ * @author Candela García Cruz
  * @since 04 May 2026
  * @description Model file for the mini MVC application
  */

@@ -2,9 +2,11 @@
  * Universidad de La Laguna
  * Escuela Superior de Ingeniería y Tecnología
  * Grado en Ingeniería Informática
- * Asignatura: Programación de Aplicaciones Interactivas
+ * Programación de Aplicaciones Interactivas
  * 
- * @author Sara Darias Sánchez
+ * @author Sara Darias Sánchez  
+ * @author Sergio de la Barrera García
+ * @author Candela García Cruz
  * @since 01 May 2026
  * @description Example of handling events in React.
  */

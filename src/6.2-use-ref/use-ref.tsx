@@ -4,7 +4,9 @@
  * Grado en Ingeniería Informática
  * Asignatura: Programación de Aplicaciones Interactivas
  * 
- * @author Sara Darias Sánchez
+ * @author Sara Darias Sánchez  
+ * @author Sergio de la Barrera García
+ * @author Candela García Cruz
  * @since 03 May 2026
  * @description Example of using useRef in React.
  */
