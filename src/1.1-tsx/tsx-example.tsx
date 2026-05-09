@@ -12,7 +12,7 @@
  */
 
 import type { JSX } from 'react';
-
+import './tsx-example.css';
 
 function BasicElement(): JSX.Element {
 	return <h1>Hello, world!</h1>;
