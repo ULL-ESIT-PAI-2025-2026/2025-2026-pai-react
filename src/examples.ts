@@ -20,7 +20,7 @@ import { UseEffect } from './6.1-use-effect/use-effect';
 import { UseRef } from './6.2-use-ref/use-ref';
 import { BookMVC } from './7-mini-mvc/adapter';
 import { CanvasWithReact } from './8-canvas-with-react/canvas-with-react';
-import { ProjectileReact } from './11-final-demo/projectile-react';
+import { ProjectileReact } from './10-final-demo/projectile-react';
 
 export type ExampleName = 
   'home' | 

@@ -7,7 +7,7 @@
  * @author Sara Darias Sánchez
  * @author Sergio de la Barrera García
  * @author Candela García Cruz
- * @file ProjectileReact component.
+ * @file ProjectileReact
  * @since May 07 2026
  * @description React implementation of the projectile simulation without MVC.
  */
