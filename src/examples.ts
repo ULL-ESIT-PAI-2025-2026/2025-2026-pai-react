@@ -12,6 +12,7 @@
  */
 
 import type { ReactElement } from 'react';
+import { TsxExample } from './1.1-tsx/tsx-example';
 import { HelloWorld } from './2-hello-world/hello-world';
 import { BookDemo } from './3.1-book-props-example/book-examples';
 import { Events } from './4.1-events/events';
@@ -24,6 +25,7 @@ import { ProjectileReact } from './9-final-demo/projectile-react';
 
 export type ExampleName = 
   'home' | 
+  'tsxExample' |
   'helloWorld' |
   'bookProps' |
   'events' |
@@ -45,6 +47,12 @@ export interface Example {
 }
 
 export const examples: Example[] = [
+  {
+    id: 'tsxExample',
+    title: 'TSX Example',
+    description: 'Example of TSX syntax in React.',
+    component: TsxExample,
+  },
   {
     id: 'helloWorld',
     title: 'Hello World',

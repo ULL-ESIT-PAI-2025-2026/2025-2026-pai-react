@@ -36,7 +36,7 @@ function ElementWithComments(): JSX.Element {
   );
 }
 
-export default function App(): JSX.Element {
+export function TsxExample(): JSX.Element {
 	return (
     <>
       <BasicElement/>
