@@ -12,8 +12,8 @@
  */
 
 import type { ReactElement } from 'react';
-import { HelloWorld } from './1-hello-world/hello-world';
-import { BookDemo } from './2.1-book-props-example/book-examples';
+import { HelloWorld } from './2-hello-world/hello-world';
+import { BookDemo } from './3.1-book-props-example/book-examples';
 import { Events } from './4.1-events/events';
 import { UseState } from './5-use-state/use-state';
 import { UseEffect } from './6.1-use-effect/use-effect';
