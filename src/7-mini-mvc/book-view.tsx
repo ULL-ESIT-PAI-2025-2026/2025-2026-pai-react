@@ -14,7 +14,6 @@
 export function BookView({ title, author, price }: { title: string; author: string; price: number }) {
   return (
     <div className="book-card">
-      <img src="https://via.placeholder.com/150" alt="Book cover" />
       <h2>{title}</h2>
       <p>Author: {author}</p>
       <p>Price: ${price.toFixed(2)}</p>
