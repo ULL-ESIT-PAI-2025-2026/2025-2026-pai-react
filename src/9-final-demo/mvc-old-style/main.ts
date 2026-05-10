@@ -10,7 +10,7 @@
  * @since 01 May 2026
  * @description Main entry point of the projectile application.
  * 
- * !!421 LINES + 26 INDEX = 447 LINES!!
+ * !!421 LINES + 26 INDEX = 447 LINES!! VS !!213 LINES!!
  */
 import {ProjectileController} from './projectile-controller.js';
 import {ProjectileModel} from './projectile-model.js';
