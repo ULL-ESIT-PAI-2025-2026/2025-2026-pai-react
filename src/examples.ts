@@ -12,6 +12,7 @@
  */
 
 import type { ReactElement } from 'react';
+
 import { TsxExample } from './1.1-tsx/tsx-example';
 import { HelloWorld } from './2-hello-world/hello-world';
 import { BookDemo } from './3.1-book-props-example/book-examples';
@@ -23,21 +24,18 @@ import { BookMVC } from './7-mini-mvc/adapter';
 import { CanvasWithReact } from './8-canvas-with-react/canvas-with-react';
 import { ProjectileReact } from './9-final-demo/projectile-react';
 
-export type ExampleName = 
-  'home' | 
-  'tsxExample' |
-  'helloWorld' |
-  'bookProps' |
-  'events' |
-  'useEffect'| 
-  'useRef' | 
-  'bookMVC' | 
-  'useState' | 
-  'useEffect' |
-  'useRef' |
-  'bookMVC' |
-  'canvasWithReact'|
-  'ProjectileReact';
+export type ExampleName =
+  | 'home'
+  | 'tsxExample'
+  | 'helloWorld'
+  | 'bookProps'
+  | 'events'
+  | 'useState'
+  | 'useEffect'
+  | 'useRef'
+  | 'bookMVC'
+  | 'canvasWithReact'
+  | 'ProjectileReact';
 
 export interface Example {
   id: Exclude<ExampleName, 'home'>;
@@ -66,58 +64,45 @@ export const examples: Example[] = [
     component: BookDemo,
   },
   {
-      id: 'events',
-      title: 'Event Handling',
-      description: 'Example of handling click and change events in React.',
-      component: Events,
-    },
+    id: 'events',
+    title: 'Event Handling',
+    description: 'Example of handling click and change events in React.',
+    component: Events,
+  },
   {
     id: 'useState',
     title: 'State with useState',
     description: 'Counter example using typed state and event handlers.',
     component: UseState,
   },
-
   {
     id: 'useEffect',
     title: 'Side Effects with useEffect',
-    description: 'Example of using useEffect to log component lifecycle events.',
+    description: 'Example of using useEffect to react to state changes.',
     component: UseEffect,
   },
   {
     id: 'useRef',
     title: 'References with useRef',
-    description: 'Example of using useRef to store previous state values.',
+    description: 'Example of using useRef for DOM and persistent references.',
     component: UseRef,
   },
   {
     id: 'bookMVC',
     title: 'Mini MVC Example',
-    description: 'A simple implementation of the Model-View-Controller pattern in React.',
+    description: 'Simple implementation of MVC architecture in React.',
     component: BookMVC,
-  },
-  {
-    id: 'useState',
-    title: 'State with useState',
-    description: 'Counter example using typed state and event handlers.',
-    component: UseState,
-  },
-  {
-    id: 'useRef',
-    title: 'References with useRef',
-    description: 'Example of using useRef to store previous state values.',
-    component: UseRef,
   },
   {
     id: 'canvasWithReact',
     title: 'Canvas in React',
-    description: 'Simple canvas example using useRef and useEffect.',
+    description: 'Canvas integration using useRef and useEffect.',
     component: CanvasWithReact,
   },
   {
     id: 'ProjectileReact',
     title: 'Projectile React',
-    description: 'Projectile simulation with React and Canvas.',
+    description: 'Interactive projectile simulation using React and Canvas.',
     component: ProjectileReact,
   },
 ];
