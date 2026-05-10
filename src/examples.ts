@@ -17,6 +17,7 @@ import { TsxExample } from './1.1-tsx/tsx-example';
 import { ComponentsExample } from './1.2-components/components-example';
 import { HelloWorld } from './2-hello-world/hello-world';
 import { BookDemo } from './3.1-book-props-example/book-examples';
+import { ParentChildrenExample } from './3.2-parent-children-props-example/parent-children-props-example';
 import { Events } from './4.1-events/events';
 import { UseState } from './5-use-state/use-state';
 import { UseEffect } from './6.1-use-effect/use-effect';
@@ -31,6 +32,7 @@ export type ExampleName =
   | 'componentsExample'
   | 'helloWorld'
   | 'bookProps'
+  | 'parentChildren'
   | 'events'
   | 'useState'
   | 'useEffect'
@@ -70,6 +72,12 @@ export const examples: Example[] = [
     title: 'Book Props Examples',
     description: 'Demonstrates different ways of using props in React.',
     component: BookDemo,
+  },
+  {
+    id: 'parentChildren',
+    title: 'Parent and Children Props',
+    description: 'Demonstrates communication between parent and child components using props.',
+    component: ParentChildrenExample,
   },
   {
     id: 'events',

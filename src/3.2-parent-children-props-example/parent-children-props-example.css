@@ -1,0 +1,17 @@
+.parent-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.child-component {
+  background-color: #dbeafe;
+  padding: 16px;
+  border-radius: 12px;
+  border: 2px solid #93c5fd;
+}
+
+.child-component h2 {
+  margin-top: 0;
+  color: #1e3a8a;
+}
