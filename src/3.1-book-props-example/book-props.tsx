@@ -13,9 +13,7 @@
 
 import type { JSX } from 'react';
 
-/**
- * Props definition for Book examples.
- */
+// Props definition for Book examples.
 type BookProps = {
   title: string;
   author?: string;
@@ -35,16 +33,12 @@ export function Book(props: BookProps): JSX.Element {
   return <h2>I am reading {props.title}!</h2>;
 }
 
-/**
- * Displays a book title using destructuring props.
- */
+// Displays a book title using destructuring props.
 export function BookDestructured({title}: BookProps): JSX.Element {
   return <h2>I am reading {title}!</h2>;
 }
 
-/**
- * Displays a book title and author using multiple props.
- */
+// Displays a book title and author using multiple props.
 export function BookMultipleProps(props: BookProps): JSX.Element {
   return <h2>{props.title} by {props.author}!</h2>;
 }
