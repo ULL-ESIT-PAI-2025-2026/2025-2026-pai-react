@@ -12,3 +12,7 @@
   text-align: center;
   box-shadow: var(--shadow);
 }
+
+.book-card h2 {
+  color: #ffffff;
+}
