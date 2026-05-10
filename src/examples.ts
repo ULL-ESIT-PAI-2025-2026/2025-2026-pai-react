@@ -14,6 +14,7 @@
 import type { ReactElement } from 'react';
 
 import { TsxExample } from './1.1-tsx/tsx-example';
+import { ComponentsExample } from './1.2-components/components-example';
 import { HelloWorld } from './2-hello-world/hello-world';
 import { BookDemo } from './3.1-book-props-example/book-examples';
 import { Events } from './4.1-events/events';
@@ -27,6 +28,7 @@ import { ProjectileReact } from './9-final-demo/projectile-react';
 export type ExampleName =
   | 'home'
   | 'tsxExample'
+  | 'componentsExample'
   | 'helloWorld'
   | 'bookProps'
   | 'events'
@@ -50,6 +52,12 @@ export const examples: Example[] = [
     title: 'TSX Example',
     description: 'Example of TSX syntax in React.',
     component: TsxExample,
+  },
+  {
+    id: 'componentsExample',
+    title: 'React Components',
+    description: 'Basic example of reusable React components.',
+    component: ComponentsExample,
   },
   {
     id: 'helloWorld',
