@@ -10,6 +10,8 @@
  * @file ProjectileReact
  * @since May 07 2026
  * @description React implementation of the projectile simulation without MVC.
+ * 
+ * !!213 LINES!!
  */
 import {useEffect, useMemo, useRef, useState} from 'react';
 import type {ChangeEvent, ReactElement} from 'react';
