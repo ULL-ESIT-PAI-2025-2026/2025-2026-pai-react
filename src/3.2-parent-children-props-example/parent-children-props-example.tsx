@@ -12,6 +12,7 @@
  */
 
 import type { JSX, ReactNode } from 'react';
+import './parent-children-props-example.css';
 
 type ChildProps = {
   title: string;
@@ -19,13 +20,13 @@ type ChildProps = {
 };
 
 //Child component that receives props from Parent.
-function ChildComponent({title, children,}: ChildProps): JSX.Element {
+function ChildComponent(props: ChildProps): JSX.Element {
   return (
     <div className="child-component">
-      <h2>{title}</h2>
+      <h2>{props.title}</h2>
 
       {/* Content received from Parent */}
-      {children}
+      {props.children}
     </div>
   );
 }
